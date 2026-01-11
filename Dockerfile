@@ -7,7 +7,7 @@ RUN pip install -r requirements.txt
 
 # Copy model from project root (context) to container
 # Original guide assumed models/trained. We use models/ directly based on observation.
-COPY models/*.pkl models/
+COPY models/ models/
 
 EXPOSE 8000
 CMD [ "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000" ]
