@@ -1,0 +1,8 @@
+model:
+  name: "house_price_prediction_rf_v1"
+  target_variable: "price"
+  best_model: "RandomForest"
+  parameters:
+    n_estimators: 100
+    max_depth: 10
+    random_state: 42
